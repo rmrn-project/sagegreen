@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Andi & Sari</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Background Sage Green + Terracotta -->
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <!-- Cover -->
+  <section id="cover" class="cover active">
+    <div class="cover-inner">
+      <p class="intro">Assalamualaikum Wr. Wb</p>
+      <p class="guest-name">Bapak/Ibu/Saudara/i</p>
+      <h1 class="title">Andi <span>&</span> Sari</h1>
+      <p class="date">25 Desember 2025</p>
+      <button id="openBtn" class="btn-open">Buka Undangan</button>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section id="main" class="main hidden">
+    <div class="container">
+
+      <header>
+        <p class="ayat">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya...”<br><small>(Ar-Rum: 21)</small></p>
+      </header>
+
+      <div class="mempelai">
+        <div class="bride">
+          <h2>Sari Putri Lestari</h2>
+          <p>Putri dari Bapak Ahmad & Ibu Siti</p>
+        </div>
+        <div class="ampersand">&amp;</div>
+        <div class="groom">
+          <h2>Andi Pratama</h2>
+          <p>Putra dari Bapak Joko & Ibu Nur</p>
+        </div>
+      </div>
+
+      <div class="event">
+        <h3>Akad Nikah</h3>
+        <p>Minggu, 25 Desember 2025<br>09.00 WIB</p>
+        <p class="lokasi">Kediaman Mempelai Wanita<br>Jl. Melati No. 25, Bandung</p>
+
+        <h3>Resepsi</h3>
+        <p>Minggu, 25 Desember 2025<br>11.00 - 15.00 WIB</p>
+        <p class="lokasi">Gedung Serba Guna Dahlia<br>Jl. Cempaka No. 88, Bandung</p>
+      </div>
+
+      <div class="maps">
+        <a href="https://maps.app.goo.gl/contohlink" target="_blank" class="btn-maps">Buka Lokasi di Google Maps</a>
+      </div>
+
+      <div class="rsvp">
+        <h3>Kirimkan Doa & Ucapan</h3>
+        <form id="ucapanForm">
+          <input type="text" placeholder="Nama kamu" required />
+          <select required>
+            <option value="">Kehadiran</option>
+            <option>Hadir</option>
+            <option>Tidak Hadir</option>
+            <option>Belum Pasti</option>
+          </select>
+          <textarea placeholder="Tulis ucapan selamat..." rows="4"></textarea>
+          <button type="submit">Kirim Ucapan</button>
+        </form>
+      </div>
+
+      <footer>
+        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+        <p class="signature">Wassalamualaikum Wr. Wb<br>Andi & Sari</p>
+      </footer>
+
+    </div>
+  </section>
+
+  <!-- Tombol Musik Ikon Only -->
+  <div class="music-btn" id="musicBtn">
+    <svg class="icon-play" viewBox="0 0 24 24"><path fill="white" d="M8 5v14l11-7z"/></svg>
+    <svg class="icon-pause" viewBox="0 0 24 24"><path fill="white" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+  </div>
+
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://undangan-digital.github.io/music/slow-wedding.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
